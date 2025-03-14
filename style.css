@@ -396,4 +396,9 @@ code {
         align-items: center;
         gap: 10px;
     }
+
+    .hero{
+        height: 100%;
+        flex-direction: column;
+    }
 }
