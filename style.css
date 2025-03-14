@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
     --body-bg: #FFFFFF;
     --navbar-bg: #F2F5F6;
     --navlink-color: #12141D;
     --active-navlink-color: #043A53;
+    --hero-bg: #F2F5F6;
     --btn-bg: #FFFFFF;
     --btn-bg-1: var(--active-navlink-color);
     --primary-text-color: #FFFFFF;
     --text-color: #12141D;
+    --text-color-1: var(--active-navlink-color);
+    --text-color-2: #55585E;
 }
 
 * {
@@ -19,7 +22,7 @@
 
 body {
     margin: 0;
-    font-family: "Inter", sans-serif;
+    font-family: "Lato", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: var(--body-bg);
@@ -28,7 +31,7 @@ body {
 }
 
 code {
-    font-family: "Inter", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -120,8 +123,11 @@ code {
 }
 
 .header .login-btn:hover {
-    background: var(--text-color);
-    color: var(--btn-bg);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header .login-btn:active {
+    transform: scale(0.95);
 }
 
 .header .signup-btn {
@@ -142,8 +148,120 @@ code {
 }
 
 .header .signup-btn:hover {
-    background: var(--primary-text-color);
-    color: var(--btn-bg-1);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header .signup-btn:active {
+    transform: scale(0.95);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: var(--hero-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 98px 10px 0px 10px;
+}
+
+.hero img {
+    width: 197px;
+    height: 340px;
+}
+
+.hero .hero-wrapper {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero h1 {
+    font-size: calc(45px + 15 * (100vw - 320px) / 1080);
+    font-weight: 800;
+    color: var(--text-color);
+    line-height: 120%;
+    text-align: center;
+}
+
+.hero h1 .highlight {
+    color: var(--text-color-1);
+}
+
+.hero .hero-description {
+    font-size: calc(15px + 5 * (100vw - 320px) / 1080);
+    font-weight: 500;
+    color: var(--text-color-2);
+    line-height: 120%;
+    text-align: center;
+}
+
+.hero .hero-buttons {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero .hero-buttons .cta-btn-1 {
+    max-width: 100%;
+    height: 60px;
+    background: var(--btn-bg-1);
+    border: none;
+    border-radius: 55px;
+    font-size: calc(16px + 2 * (100vw - 320px) / 1080);
+    font-weight: 600;
+    color: var(--primary-text-color);
+    line-height: 100%;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero .hero-buttons .cta-btn-1:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero .hero-buttons .cta-btn-1:active {
+    transform: scale(0.95);
+}
+
+.hero .hero-buttons .cta-btn-2 {
+    max-width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    border-radius: 55px;
+    font-size: calc(16px + 2 * (100vw - 320px) / 1080);
+    font-weight: 600;
+    color: var(--text-color-1);
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    padding: 16px 24px;
+    transition: all 0.3s ease;
+}
+
+.hero .hero-buttons .cta-btn-2:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero .hero-buttons .cta-btn-2 img {
+    width: 35px;
+    height: 35px;
+}
+
+.hero .hero-buttons .cta-btn-2:active {
+    transform: scale(0.95);
 }
 
 @media all and (min-width: 992px) {
