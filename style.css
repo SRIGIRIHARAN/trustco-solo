@@ -13,6 +13,7 @@
     --text-color: #12141D;
     --text-color-1: var(--active-navlink-color);
     --text-color-2: #55585E;
+    --text-color-3: #F0B73F;
 }
 
 * {
@@ -163,7 +164,7 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 98px 10px 0px 10px;
+    padding: 100px 120px;
 }
 
 .hero img {
@@ -275,7 +276,7 @@ code {
     justify-content: center;
     align-items: center;
     gap: 64px;
-    padding: 50px 10px;
+    padding: 50px 150px;
 }
 
 .trusted-by h2 {
@@ -283,6 +284,7 @@ code {
     font-weight: 500;
     color: var(--secondary-text-color);
     line-height: 100%;
+    text-wrap: nowrap;
 }
 
 .trusted-by .brands {
@@ -297,6 +299,47 @@ code {
 .trusted-by .brands img {
     width: 97px;
     height: 32px;
+}
+
+.sales-section {
+    width: 100%;
+    max-height: 100%;
+    background: var(--btn-bg-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    padding: 100px 150px;
+    padding-bottom: 0px;
+}
+
+.sales-section .sales-content {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sales-section .sales-content h2 {
+    font-size: calc(45px + 15 * (100vw - 320px) / 1080);
+    font-weight: 700;
+    color: var(--primary-text-color);
+    line-height: 100%;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+.sales-section .sales-content .highlight {
+    color: var(--text-color-3);
+}
+
+.sales-section .sales-content p{
+    font-size: calc(16px + 2 * (100vw - 320px) / 1080);
+    font-weight: 400;
+    color: var(--primary-text-color);
+    line-height: 120%;
 }
 
 
@@ -332,6 +375,15 @@ code {
         height: 40px;
     }
 
+    .hero {
+        padding: 50px 60px;
+        padding-top: 140px;
+    }
+
+    .hero img {
+        width: 160px;
+    }
+
     .hero .hero-buttons {
         flex-direction: column;
     }
@@ -346,6 +398,7 @@ code {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding: 50px;
     }
 
     .trusted-by .brands {
