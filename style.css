@@ -733,6 +733,41 @@ code {
         flex-wrap: wrap;
         padding: 50px;
     }
+
+    .meet-founder {
+        flex-direction: column;
+        gap: 32px;
+        padding: 50px;
+    }
+
+    .meet-founder .founder-content {
+        align-items: center;
+    }
+
+    .meet-founder .founder-info {
+        align-items: center;
+    }
+
+    .meet-founder .founder-image {
+        justify-content: center;
+    }
+
+    .meet-founder .founder-image .founder-img-1 {
+        width: 332px;
+        height: 378px;
+    }
+
+    .meet-founder .founder-image .founder-img-2 {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        transform: translate(-200%, 20%);
+    }
+
+    .meet-founder .founder-image .founder-img-3 {
+        right: 50%;
+        transform: translate(150%, -40%);
+    }
 }
 
 @media (max-width: 767px) {
@@ -891,5 +926,9 @@ code {
     .numbers {
         padding: 50px 20px;
         justify-content: center;
+    }
+
+    .meet-founder {
+        padding: 50px 20px;
     }
 }
