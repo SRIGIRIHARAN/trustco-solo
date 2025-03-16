@@ -275,6 +275,7 @@ code {
     justify-content: center;
     align-items: center;
     gap: 64px;
+    padding: 50px 10px;
 }
 
 .trusted-by h2 {
@@ -293,7 +294,7 @@ code {
     gap: 64px;
 }
 
-.trusted-by .brands img{
+.trusted-by .brands img {
     width: 97px;
     height: 32px;
 }
@@ -339,6 +340,17 @@ code {
     .hero .hero-buttons .cta-btn-2 {
         height: 45px;
         padding: 0px 24px;
+    }
+
+    .trusted-by {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .trusted-by .brands {
+        flex-wrap: wrap;
+        gap: 24px;
     }
 }
 
@@ -465,5 +477,10 @@ code {
     .hero .mobile-img img {
         width: 100%;
         height: 100%;
+    }
+
+    .trusted-by .brands {
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
