@@ -601,8 +601,9 @@ code {
         text-align: center;
     }
 
-    .benefits-section .benefits-container {
+    .numbers {
         flex-wrap: wrap;
+        padding: 50px;
     }
 }
 
@@ -753,5 +754,14 @@ code {
 
     .benefits-section {
         padding: 50px 20px;
+    }
+
+    .benefits-section .benefits-container {
+        flex-wrap: wrap;
+    }
+
+    .numbers {
+        padding: 50px 20px;
+        justify-content: center;
     }
 }
