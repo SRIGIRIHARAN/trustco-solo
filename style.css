@@ -365,7 +365,7 @@ code {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 64px;
+    gap: 34px;
     padding: 100px 150px;
 }
 
@@ -541,6 +541,29 @@ code {
         align-items: flex-start;
         gap: 16px;
     }
+
+    .benefits-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .benefits-section .benefits-header {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .benefits-section .benefits-header h2 {
+        text-align: center;
+    }
+
+    .benefits-section .benefits-header p {
+        text-align: center;
+    }
+
+    .benefits-section .benefits-container {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 767px) {
@@ -652,6 +675,8 @@ code {
         height: 100%;
         min-height: 100vh;
         flex-direction: column;
+        padding: 50px 20px;
+        padding-top: 100px;
     }
 
     .hero .mobile-img {
@@ -668,6 +693,10 @@ code {
         height: 100%;
     }
 
+    .trusted-by {
+        padding: 50px 20px;
+    }
+
     .trusted-by .brands {
         flex-wrap: wrap;
         gap: 20px;
@@ -680,5 +709,9 @@ code {
 
     .sales-section .sales-content h2 {
         text-wrap: wrap;
+    }
+
+    .benefits-section {
+        padding: 50px 20px;
     }
 }
