@@ -9,6 +9,7 @@
     --btn-bg: #FFFFFF;
     --btn-bg-1: var(--active-navlink-color);
     --primary-text-color: #FFFFFF;
+    --secondary-text-color: #000000;
     --text-color: #12141D;
     --text-color-1: var(--active-navlink-color);
     --text-color-2: #55585E;
@@ -266,6 +267,38 @@ code {
 .hero .hero-buttons .cta-btn-2:active {
     transform: scale(0.95);
 }
+
+.trusted-by {
+    width: 100%;
+    min-height: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.trusted-by h2 {
+    font-size: calc(14px + 2 * (100vw - 320px) / 1080);
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    line-height: 100%;
+}
+
+.trusted-by .brands {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.trusted-by .brands img{
+    width: 97px;
+    height: 32px;
+}
+
+
 
 @media all and (min-width: 992px) {
     .desktop-hide {
