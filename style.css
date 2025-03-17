@@ -983,7 +983,7 @@ code {
 }
 
 .news .news-card:hover {
-    box-shadow: 0px 3px 6px  rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .news .news-card img {
@@ -1242,6 +1242,10 @@ code {
         width: 90%;
         justify-content: flex-start;
     }
+
+    .news {
+        padding: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1429,6 +1433,10 @@ code {
     }
 
     .testimonials {
+        padding: 50px 20px;
+    }
+
+    .news {
         padding: 50px 20px;
     }
 }

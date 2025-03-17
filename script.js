@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateSlide(index) {
         const translateX = -index * 100 + "%";
         swiperWrapper.style.transform = "translateX(" + translateX + ")";
-        
+
         dots.forEach(dot => dot.classList.remove("active"));
         dots[index].classList.add("active");
     }
