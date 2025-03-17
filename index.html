@@ -355,87 +355,164 @@
       <section class="testimonials">
         <div class="testimonials-header">
           <h2>We Believe in People We Trust</h2>
-          <a href="#" class="see-all-btn">
+          <a href="#" class="see-all-btn tab-hide mobile-hide">
             See All
             <img
               src="./images/arrow-right-line.svg"
               width="24"
               height="24"
-              alt="Aroow_Right_Icon"
+              alt="Arrow_Right_Icon"
             />
           </a>
+          <div class="testimonials-navigation desktop-hide">
+            <button class="dot active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+          </div>
         </div>
 
         <div class="testimonials-container">
-          <!-- Testimonial 1 -->
-          <article class="testimonial">
-            <figure>
-              <img
-                src="./images/testimonal-image.svg"
-                width="47"
-                height="47"
-                alt="Testimonal_Image_1"
-              />
-            </figure>
-            <blockquote>
-              "I'm totally unconvinced that two people can find a
-              <br class="break" />
-              person they haven't known previously and become and effective
-              co-founder."
-            </blockquote>
-            <div class="testimonial-author">
-              <img
-                src="./images/client-1.svg"
-                width="48"
-                height="48"
-                alt="Client_Image_1"
-              />
-              <div class="client-details">
-                <h3>Andrew Wilkins</h3>
-                <p>Managing Director, Yess Company</p>
-              </div>
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <article class="testimonial">
+                <figure>
+                  <img
+                    src="./images/testimonal-image.svg"
+                    width="47"
+                    height="47"
+                    alt="Testimonial_Image_1"
+                  />
+                </figure>
+                <blockquote>
+                  "I'm totally unconvinced that two people can find a
+                  <br class="break" />
+                  person they haven't known previously and become an effective
+                  co-founder."
+                </blockquote>
+                <div class="testimonial-author">
+                  <img
+                    src="./images/client-1.svg"
+                    width="48"
+                    height="48"
+                    alt="Client_Image_1"
+                  />
+                  <div class="client-details">
+                    <h3>Andrew Wilkins</h3>
+                    <p>Managing Director, Yess Company</p>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
 
-          <!-- Testimonial 2 -->
-          <article class="testimonial">
-            <figure>
-              <img
-                src="./images/testimonal-image.svg"
-                width="47"
-                height="47"
-                alt="Testimonal_Image_1"
-              />
-            </figure>
-            <blockquote>
-              "Easy to use, reasonably priced, and ensures I
-              <br class="break" />
-              don’t drop the ball on following up with my
-              <br class="break" />
-              leads!"
-            </blockquote>
-            <div class="testimonial-author">
-              <img
-                src="./images/client-2.svg"
-                width="48"
-                height="48"
-                alt="Client_Image_2"
-              />
-              <div class="client-details">
-                <h3>Daisy Phelps</h3>
-                <p>Digital Marketing Director, Monatc</p>
-              </div>
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <article class="testimonial">
+                <figure>
+                  <img
+                    src="./images/testimonal-image.svg"
+                    width="47"
+                    height="47"
+                    alt="Testimonial_Image_2"
+                  />
+                </figure>
+                <blockquote>
+                  "Easy to use, reasonably priced, and ensures I
+                  <br class="break" />
+                  don’t drop the ball on following up with my leads!"
+                </blockquote>
+                <div class="testimonial-author">
+                  <img
+                    src="./images/client-2.svg"
+                    width="48"
+                    height="48"
+                    alt="Client_Image_2"
+                  />
+                  <div class="client-details">
+                    <h3>Daisy Phelps</h3>
+                    <p>Digital Marketing Director, Monatc</p>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <article class="testimonial">
+                <figure>
+                  <img
+                    src="./images/testimonal-image.svg"
+                    width="47"
+                    height="47"
+                    alt="Testimonial_Image_3"
+                  />
+                </figure>
+                <blockquote>
+                  "This software has transformed the way I manage client
+                  communications."
+                </blockquote>
+                <div class="testimonial-author">
+                  <img
+                    src="./images/client-1.svg"
+                    width="48"
+                    height="48"
+                    alt="Client_Image_3"
+                  />
+                  <div class="client-details">
+                    <h3>Michael Scott</h3>
+                    <p>Regional Manager, Dunder Mifflin</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <article class="testimonial">
+                <figure>
+                  <img
+                    src="./images/testimonal-image.svg"
+                    width="47"
+                    height="47"
+                    alt="Testimonial_Image_3"
+                  />
+                </figure>
+                <blockquote>
+                  "This software has transformed the way I manage client
+                  communications."
+                </blockquote>
+                <div class="testimonial-author">
+                  <img
+                    src="./images/client-2.svg"
+                    width="48"
+                    height="48"
+                    alt="Client_Image_3"
+                  />
+                  <div class="client-details">
+                    <h3>Daisy Phelps</h3>
+                    <p>Digital Marketing Director, Monatc</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
 
         <!-- Swiper Navigation -->
-        <div class="testimonials-navigation">
-          <button></button>
-          <button class="active"></button>
-          <button></button>
-          <button></button>
+        <div class="testimonials-navigation mobile-hide tab-hide">
+          <button class="dot active" data-slide="0"></button>
+          <button class="dot" data-slide="1"></button>
+          <button class="dot" data-slide="2"></button>
         </div>
+        <a href="#" class="see-all-btn desktop-hide">
+          See All
+          <img
+            src="./images/arrow-right-line.svg"
+            width="24"
+            height="24"
+            alt="Arrow_Right_Icon"
+          />
+        </a>
       </section>
 
       <!-- <section>
@@ -558,5 +635,6 @@
         </div>
       </footer> -->
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

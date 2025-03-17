@@ -750,7 +750,7 @@ code {
     line-height: 100%;
 }
 
-.testimonials .testimonials-header .see-all-btn {
+.testimonials .see-all-btn {
     min-width: 98px;
     height: 28px;
     font-size: calc(16px + 2 * (100vw - 320px) / 1080);
@@ -764,7 +764,7 @@ code {
     text-decoration: none;
 }
 
-.testimonials .testimonials-header .see-all-btn img {
+.testimonials .see-all-btn img {
     width: 24px;
     height: 24px;
 }
@@ -772,10 +772,24 @@ code {
 .testimonials .testimonials-container {
     width: 100%;
     max-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials .swiper-wrapper {
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+.testimonials .swiper-slide {
+    width: 100%;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
+    align-items: center;
 }
 
 .testimonials .testimonial {
@@ -857,7 +871,7 @@ code {
     gap: 11px;
 }
 
-.testimonials-navigation button {
+.testimonials-navigation .dot {
     width: 20px;
     height: 12px;
     border: none;
@@ -867,8 +881,7 @@ code {
     cursor: pointer;
 }
 
-/* .testimonials-navigation button.active, */
-.testimonials-navigation button:focus {
+.testimonials-navigation .dot.active {
     width: 80px;
     background: var(--btn-bg-1);
 }
@@ -1028,6 +1041,25 @@ code {
 
     .building-bridges .bridge-content p {
         text-align: center;
+    }
+
+    .testimonials {
+        padding: 50px;
+        gap: 32px;
+    }
+
+    .testimonials .testimonials-header {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .testimonials .testimonials-header h2 {
+        text-align: center;
+    }
+
+    .testimonials .swiper-wrapper {
+        width: 90%;
+        justify-content: flex-start;
     }
 }
 
@@ -1213,5 +1245,9 @@ code {
 
     .building-bridges .bridge-image {
         padding-right: 50px;
+    }
+
+    .testimonials {
+        padding: 50px 20px;
     }
 }
