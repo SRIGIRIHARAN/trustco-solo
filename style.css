@@ -856,6 +856,29 @@ code {
         right: 50%;
         transform: translate(150%, -40%);
     }
+
+    .building-bridges {
+        flex-direction: column-reverse;
+        gap: 32px;
+        padding: 0;
+    }
+
+    .building-bridges .bridge-content {
+        align-items: center;
+        padding: 50px 10px;
+    }
+
+    .building-bridges .bridge-image {
+        padding-right: 50px;
+    }
+
+    .building-bridges .bridge-content h2 {
+        text-align: center;
+    }
+
+    .building-bridges .bridge-content p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -981,7 +1004,7 @@ code {
     }
 
     .hero .mobile-img img {
-        width: 100%;
+        width: 50%;
         height: 100%;
     }
 
@@ -1018,5 +1041,27 @@ code {
 
     .meet-founder {
         padding: 50px 20px;
+    }
+
+    .meet-founder .founder-image .founder-img-1 {
+        width: 100%;
+    }
+
+    .building-bridges .bridge-image .bridge-image-1 {
+        width: 100%;
+    }
+
+    .building-bridges .bridge-image .bridge-image-2 {
+        width: 150px;
+        height: 150px;
+        transform: translate(25%, -100%);
+    }
+
+    .building-bridges .bridge-content {
+        padding: 10px;
+    }
+
+    .building-bridges .bridge-image {
+        padding-right: 50px;
     }
 }
