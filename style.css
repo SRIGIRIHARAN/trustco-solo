@@ -1137,7 +1137,7 @@ code {
     align-items: flex-end;
 }
 
-.cta-image img{
+.cta-image img {
     width: 100%;
     height: 100%;
 }
@@ -1321,6 +1321,23 @@ code {
 
     .news {
         padding: 50px;
+    }
+
+    .cta-banner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .cta-banner .cta-text {
+        align-items: center;
+        padding: 50px;
+        padding-right: 0px;
+    }
+
+    .cta-banner h2{
+        text-wrap: wrap;
+        text-align: center;
     }
 }
 
