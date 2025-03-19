@@ -1229,7 +1229,71 @@ code {
     text-decoration: none;
 }
 
+.collaborators-section {
+    width: 100%;
+    max-height: 100%;
+    background: var(--navbar-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 
+.collaborators-section .collaborators-wrapper {
+    min-width: 676px;
+    height: 100%;
+    background: var(--primary-text-color);
+    border: 1px solid #888888;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.collaborators-section .collaborators-container {
+    width: 100%;
+    max-height: 100%;
+    border-bottom: 1px solid #888888;
+    font-size: calc(16px + 2 * (100vw - 320px) / 1080);
+    font-weight: 400;
+    color: var(--text-color-4);
+    line-height: 120%;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+.collaborators-section .collaborators-container a {
+    color: #6439FF;
+    text-decoration: none;
+}
+
+.collaborators-section .collaborators {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 100px;
+}
+
+.collaborators-section .collaborators span {
+    font-size: calc(16px + 2 * (100vw - 320px) / 1080);
+    font-weight: 400;
+    color: var(--text-color-4);
+    line-height: normal;
+}
+
+.collaborators-section .collaborators-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
 
 
 
