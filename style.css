@@ -1428,6 +1428,15 @@ code {
         text-wrap: wrap;
         text-align: center;
     }
+
+    .footer-container {
+        padding: 50px;
+        gap: 32px;
+    }
+
+    .footer-container .footer-nav {
+        gap: 32px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1603,7 +1612,9 @@ code {
     .building-bridges .bridge-image .bridge-image-2 {
         width: 150px;
         height: 150px;
-        transform: translate(25%, -100%);
+        left: 50%;
+        right: 0%;
+        transform: translate(-50%, -100%);
     }
 
     .building-bridges .bridge-content {
@@ -1620,5 +1631,36 @@ code {
 
     .news {
         padding: 50px 20px;
+    }
+
+    .news .news-header {
+        flex-direction: column;
+    }
+
+    .news .news-header h3 {
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 50px 20px;
+    }
+
+    .footer-container .footer-brand {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-container .social-icons {
+        justify-content: center;
+    }
+
+    .footer-container .footer-description {
+        text-align: center;
+    }
+
+    .footer-container .footer-nav {
+        justify-content: flex-start;
     }
 }
