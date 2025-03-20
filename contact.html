@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trustco Solo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">
+        <img
+          src="./images/logo.svg"
+          width="158"
+          height="24"
+          alt="Company_Logo"
+        />
+      </a>
+      <nav class="nav mobile-hide">
+        <ul>
+          <li><a href="#" class="active">Features</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons mobile-hide">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign up</button>
+      </div>
+      <div class="mobile-nav desktop-hide tab-hide">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <img
+            src="./images/menu-icon.svg"
+            width="24"
+            height="24"
+            alt="Menu_Icon"
+          />
+        </label>
+        <div class="mobile-menu">
+          <a href="" class="mobile-logo">
+            <img src="./images/logo.svg" width="158" height="24" alt="Logo" />
+          </a>
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="contact-header">
+          <h1>We are here to help</h1>
+          <p>
+            Contact us if you have any questions about our company. Our best
+            team will <br class="break" />
+            provide your answer within a few hours.
+          </p>
+        </div>
+        <div class="contact-cards">
+          <div class="contact-card">
+            <img
+              src="./images/Email.svg"
+              width="64"
+              height="64"
+              class="contact-card-img"
+              alt="Email Icon"
+            />
+            <div class="contact-info">
+              <h3>Email Us</h3>
+              <p>
+                Ask anything by emailing us, and we will<br class="break" />
+                respond within a few days.
+              </p>
+            </div>
+            <a href="mailto:support@example.com" class="contact-link">
+              Send Email
+              <img
+                src="./images/arrow-right-line.svg"
+                width="24"
+                height="24"
+                alt="Arrow_Right_Icon"
+              />
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <img
+              src="./images/Location.svg"
+              width="64"
+              height="64"
+              class="contact-card-img"
+              alt="Location Icon"
+            />
+            <div class="contact-info">
+              <h3>Drop In</h3>
+              <p>
+                You can meet us at our office and <br class="break" />
+                the details of your questions.
+              </p>
+            </div>
+            <a href="https://maps.google.com" class="contact-link">
+              Get Directions
+              <img
+                src="./images/arrow-right-line.svg"
+                width="24"
+                height="24"
+                alt="Arrow_Right_Icon"
+              />
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <img
+              src="./images/Call.svg"
+              width="64"
+              height="64"
+              class="contact-card-img"
+              alt="Phone Icon"
+            />
+            <div class="contact-info">
+              <h3>Call Us</h3>
+              <p>
+                Call us if your question requires an<br class="break" />
+                response.
+              </p>
+            </div>
+            <a href="tel:+1234567890" class="contact-link">
+              Call Now
+              <img
+                src="./images/arrow-right-line.svg"
+                width="24"
+                height="24"
+                alt="Arrow_Right_Icon"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <div class="form-header">
+          <h2>Leave us a message</h2>
+          <p>
+            Contact us if you have any questions about our company. Our best
+            team will <br class="break" />
+            provide your answer within a few hours.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="input-row">
+            <div class="input-group">
+              <label for="name"
+                ><img
+                  src="./images/name-input-icon.svg"
+                  width="36"
+                  height="36"
+                  alt="User Icon"
+              /></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="email"
+                ><img
+                  src="./images/message-input-icon.svg"
+                  width="36"
+                  height="36"
+                  alt="Email Icon"
+              /></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="company"
+                ><img
+                  src="./images/company-input-icon.svg"
+                  width="36"
+                  height="36"
+                  alt="Company Icon"
+              /></label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company Name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="contact"
+                ><img
+                  src="./images/mobile-input-icon.svg"
+                  width="36"
+                  height="36"
+                  alt="Phone Icon"
+              /></label>
+              <input
+                type="tel"
+                id="contact"
+                name="contact"
+                placeholder="Contact Number"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="textarea-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="How we can help?"
+              required
+            ></textarea>
+          </div>
+          <div class="form-foot">
+            <div class="terms">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms"
+                >I agree with the <a href="#">Terms & Conditions</a></label
+              >
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="./images/logo.svg"
+              width="211"
+              height="32"
+              alt="Trustco Logo"
+              class="logo"
+            />
+            <div class="social-icons">
+              <a href="#"
+                ><img
+                  src="./images/facebook-circle-fill.svg"
+                  alt="Follow us on Facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./images/instagram-fill.svg"
+                  alt="Follow us on Instagram"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./images//youtube-fill.svg"
+                  alt="Follow us on YouTube"
+              /></a>
+            </div>
+          </div>
+
+          <p class="footer-description">
+            An awesome & powerful tool for your business, increasing revenue. By
+            evaluating a variety of data sets and the speed of tech adaptation,
+            we bridge the gap between companies and customers.
+          </p>
+
+          <nav class="footer-nav">
+            <div>
+              <h3>Home</h3>
+              <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>About Us</h3>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Career</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </footer>
+      <section class="site-credits">
+        <p>© 2025 Trustco.</p>
+
+        <nav class="footer-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </nav>
+
+        <div class="language-switcher">
+          <img
+            src="./images/global-line.svg"
+            width="24"
+            height="24"
+            alt="Globe_Icon1111111"
+          />
+          <select>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+          </select>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
